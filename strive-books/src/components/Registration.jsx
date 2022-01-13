@@ -37,14 +37,15 @@ const Registration = () => {
   };
 
   return (
-    <div className="d-flex flex-column align-items-left justify-content-left">
+    <div className="d-flex flex-column align-items-center">
       {completedForm ? (
         <>
+          <img  className="greentickimg" src="greentick.png" alt="checked"/>
           <h1>
             <strong>Your registration is successful!</strong>
           </h1>
-          <p>{registration.name}</p>
-          <p>{registration.surname}</p>
+          <p>{registration.name} {registration.surname}</p>
+         
           <p>{registration.email}</p>
         </>
       ) : (
